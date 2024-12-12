@@ -1,6 +1,8 @@
 // Importing the express package
 const express = require("express");
+const cors = require('cors');
 const app = express();
+app.use(cors());
 
  const indianStatesCoordinates = {
    AndhraPradesh: {
