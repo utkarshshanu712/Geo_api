@@ -1,15 +1,11 @@
 {
   "name": "state-coordinates-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/api.js",
   "scripts": {
-    "start": "node api.js",
+    "start": "node api/api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
   }
