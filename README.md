@@ -6,7 +6,7 @@ URL: /find-state
 
 Method: GET
 
-Query Parameters:
+### Query Parameters:
 
 lat (required): Latitude of the location
 
@@ -27,6 +27,15 @@ How to Use the API in Your Project
 To integrate this API into your project, follow these steps:
 
 Fetch Data from the API: Use any HTTP client (like Axios, Fetch API, etc.) to make requests to the API. Here’s an example using JavaScript's Fetch API:
+#### Query Parameters
+
+- `lat`: The latitude of the location (float).
+- `long`: The longitude of the location (float).
+
+#### Example Request
+
+``http
+GET https://geo-api-61zy.onrender.com/find-state?lat=20.3974&long=72.8325``
 
 ## javascript
 ``async function getLocation(lat, long) {
@@ -75,6 +84,15 @@ getLocation(latitude, longitude).then(location => {
   console.log(`The location is: ${location}`);
 });
 
+### Code Example
+``if (response.ok) {
+                    const data = await response.json();
+
+                    const locationParts = data.location.split(", ");
+                    const foundState = locationParts[0] || "Unknown State";
+                    const foundDistrict = locationParts[1] || "";
+                    <!-- according to your requremnts -->
+``
 
 ### Contributing
 Feel free to fork this repository and contribute by submitting a pull request.
