@@ -3,7 +3,8 @@ const express = require("express");
 const cors = require('cors');
 const app = express();
 app.use(cors());
-const port = 3000;
+require("dotenv").config();
+const port = process.env.PORT || 3000;
 
 // Keep your existing Coordinates object as is
 
@@ -7023,6 +7024,10 @@ app.get("/find-state", (req, res) => {
         return res.json({ message: "Location not found in our database" });
     }
 });
+
+app.get("/" ,(req,res)=>{
+  res.send("Server is running")
+})
 
 // Start the server
 app.listen(port, () => {
