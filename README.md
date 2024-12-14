@@ -1,6 +1,10 @@
-# API Documentation
+🌍 **Geocoding API** 🌍
 
-This endpoint returns the state and district within India based on provided latitude and longitude coordinates.
+This API provides geographical information based on latitude and longitude coordinates. It returns the closest state, district, and country for the provided coordinates.
+
+## Overview
+
+🌈 The Geocoding API allows users to find geographical locations worldwide based on latitude and longitude. It can return detailed location information, including the state, district, and country.
 
 ## Endpoint
 
@@ -9,20 +13,24 @@ This endpoint returns the state and district within India based on provided lati
 
 ## Query Parameters
 
-- `lat` (required): Latitude of the location
-- `long` (required): Longitude of the location
+- `lat` (required): Latitude of the location.
+- `long` (required): Longitude of the location.
 
 ## Example Request
-``sh
-curl 'https://geo-api-61zy.onrender.com/find-state?lat=28.6139&long=77.2090'``
- 
- 
-## Example Response
-`` json
-{
-"location": "Delhi, India"
-} ``
 
+```sh
+curl 'https://geo-api-61zy.onrender.com/find-state?lat=28.6139&long=77.2090'
+https://geo-api-61zy.onrender.com/find-state?lat=28.6139&long=77.2090
+```
+
+## Example Response
+
+```json
+{
+  "location": "Delhi, India",
+  "distance": "0.00"
+}
+```
 
 ## Integration
 
@@ -85,19 +93,21 @@ To integrate this API into your project, follow these steps:
    ```
 
 ## Code Example
-javascript
+
+Here’s a snippet of how to handle the API response:
+
+```javascript
 if (response.ok) {
-const data = await response.json();
-const locationParts = data.location.split(", ");
-const foundState = locationParts[0] || "Unknown State";
-const foundDistrict = locationParts[1] || "";
-// ... according to your requirements ...
+  const data = await response.json();
+  const location = data.location || "Unknown Location";
+  // Update the UI or handle the location data as needed
 }
+```
 
 ## Contributing
 
-Feel free to fork this repository and contribute by submitting a pull request.
+🚀 Feel free to fork this repository and contribute by submitting a pull request. Any improvements, bug fixes, or new features are welcome!
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+📜 This project is licensed under the MIT License. See the LICENSE file for details.
