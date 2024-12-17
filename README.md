@@ -31,7 +31,11 @@ https://geo-api-61zy.onrender.com/find-state?lat=28.6139&long=77.2090
   "distance": "0.00"
 }
 ```
-
+## Example Project
+### 🌏 [Geocoding-API=Website](https://github.com/utkarshshanu712/GeoEncodingApi-using-website)
+Geocoding-API.
+### 🕑 [Digital clock](https://github.com/utkarshshanu712/Digital-clock)
+Geocoding-API-repositories.
 ## Integration
 
 ### How to Use the API in Your Project
@@ -107,7 +111,3 @@ if (response.ok) {
 ## Contributing
 
 🚀 Feel free to fork this repository and contribute by submitting a pull request. Any improvements, bug fixes, or new features are welcome!
-
-## License
-
-📜 This project is licensed under the MIT License. See the LICENSE file for details.
