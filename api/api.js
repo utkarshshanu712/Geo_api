@@ -6238,7 +6238,7 @@ Zambia: {
         Western: { latitude: -15.0000, longitude: 23.0000 },
     }
 },
-// ... existing countries ...
+
 
 Australia: {
     latitude: -25.2744,
@@ -6251,6 +6251,7 @@ Australia: {
         Victoria: { latitude: -37.0000, longitude: 144.0000 },
         WesternAustralia: { latitude: -25.0000, longitude: 115.0000 },
         AustralianCapitalTerritory: { latitude: -35.2835, longitude: 149.1281 },
+        Sydney: { latitude: -33.8688, longitude: 151.2093 },
     }
 },
 Fiji: {
